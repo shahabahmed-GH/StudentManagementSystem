@@ -1,7 +1,5 @@
 # 🎓 StudentManagement App
 
-<img src="List.png" width="500" />
-
 ## 📋 Features
 📚 Student List View  
 ➕ Add Student  
