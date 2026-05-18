@@ -1,0 +1,38 @@
+﻿@model StudentManagement.Models.Student
+
+<div class="container mt-4" style="max-width:500px">
+    <h2>Edit Student</h2>
+    <hr />
+
+    <form asp-action="Edit">
+
+        @* ID hidden rakho — user ko dikhana nahi *@
+        <input type="hidden" asp-for="ID" />
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Course" class="form-label"></label>
+            <input asp-for="Course" class="form-control" />
+            <span asp-validation-for="Course" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Batch" class="form-label"></label>
+            <input asp-for="Batch" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-warning">Update Student</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
