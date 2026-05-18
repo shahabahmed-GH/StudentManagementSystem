@@ -25,4 +25,4 @@
 <img src="Db.png" width="500" />
 
 ## 🛠️ Tech Stack
-C# |.NET | SQL Server (or Local DB)
+C# |.NET | SQL Server
